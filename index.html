@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>On embauche! Journées d'embauche 22, 23 et 24 août | McDonald's St-Jovite</title>
+<meta name="description" content="Le McDonald's de St-Jovite (Mont-Tremblant) embauche sur tous les postes. Entrevues sur place les 22, 23 et 24 août, avec ou sans rendez-vous. Viens nous rencontrer!">
+
+<!-- Partage Facebook / réseaux sociaux -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="On embauche à St-Jovite! Journées d'embauche 22, 23 et 24 août">
+<meta property="og:description" content="Entrevues sur place au McDonald's de St-Jovite, avec ou sans rendez-vous. Tous les postes, temps plein et temps partiel. Aucune expérience requise.">
+<meta property="og:locale" content="fr_CA">
+<!-- REMPLACER par l'URL de l'image de partage une fois le site déployé (URL absolue requise par Facebook) -->
+<meta property="og:image" content="URL_IMAGE_PARTAGE_ICI">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&family=Archivo+Black&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --jaune:#FFC72C;
+  --rouge:#DA291C;
+  --noir:#27251F;
+  --creme:#FFF9EE;
+  --blanc:#FFFFFF;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  font-family:'Archivo',sans-serif;
+  color:var(--noir);
+  background:var(--blanc);
+  line-height:1.65;
+  font-size:17px;
+  overflow-x:hidden;
+}
+h1,h2,h3{font-family:'Archivo Black',sans-serif;line-height:1.15;}
+img{max-width:100%;}
+a{color:inherit;}
+
+/* ---------- ANIMATIONS D'ENTRÉE (hero) ---------- */
+@keyframes montee{
+  from{opacity:0;transform:translateY(26px);}
+  to{opacity:1;transform:translateY(0);}
+}
+@keyframes rebond{
+  0%{opacity:0;transform:translateY(-40px) scale(.7);}
+  60%{opacity:1;transform:translateY(8px) scale(1.05);}
+  80%{transform:translateY(-4px) scale(.98);}
+  100%{opacity:1;transform:translateY(0) scale(1);}
+}
+@keyframes respiration{
+  0%,100%{transform:translateX(-50%) scale(1);opacity:.35;}
+  50%{transform:translateX(-50%) scale(1.06);opacity:.55;}
+}
+@keyframes pulsation{
+  0%,88%,100%{transform:scale(1);}
+  92%{transform:scale(1.04);}
+  96%{transform:scale(.99);}
+}
+@keyframes defilement{
+  from{transform:translateX(0);}
+  to{transform:translateX(-50%);}
+}
+@keyframes flottement{
+  0%,100%{transform:translateY(0) rotate(0deg);}
+  50%{transform:translateY(-8px) rotate(2deg);}
+}
+
+/* Arche McDonald's Canada : logo du pied de page */
+.arche{
+  display:block;
+  background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAE5CAMAAACK6Uq1AAAA/1BMVEX94Zf+9e3+4nL+3tn9uGf8sRv902X+8eH+7tXsGCr82KH5oB793J/92qLyXCb8y2X+s6/8yGX+AgD8thv8sRT+zyP8eAL/f3/+0CL7u1L/sPf9xS6/vz/7vUv9xCuxsWP/f/+0AAC/f3//AP/7vkJ/f3+qqqoAAAD8uRz8uiP+/v7+xyv+xBjsGyr8rQD+2E7++/L+5XD++/v9yE//2rX++dD//tT+0zX//wD+127++K7+6Yz+57b//7X++vf/25cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACR4OhQAAAAQHRSTlPtXwkRBwrqpeH/F/SeYv6eBGIBnF8IBgLzXgSfBJNgAwIDBAHNAgMA/v4F/f7/+f35/i76CPwG/gH9/fz7BI8I3CIgRwAALRZJREFUeNrtnQl7okjXsNlEg9oa0zGZnmdmnnf5PqCgRUUBF/T//6u3ThUoGmsBwabzhOua7kk6S3FzOHX2Uuz6L3S0tA78j9qbz3s9Jb/2+MP5Ifsiy7J/wYVQpGX/q+LFnNfWg7XNVfiHqRZFqPbfrNR/Kwn9W9etYW+93ivKxsTXZgOo172uZenLJcJ3MkHo0ZQn9K/l0tK0wf60NpOubY4Xh5dGvjape3F1g05XFhUZtTsYjcJNGHr4cl340wvDYGOOBoPD4bC07VfrmKJHYs6kGakHWJsZBsXFhWGIZWHQPahkTccI1YtaaeKWdCIwysZ1nJlzdXnBRlnjl1RHNvoVqgMd8Xu2xQLgXy9u5rjhZrtWrCNCLVcdKM1EZjB68Uwz9p3Z1b3MHD8OgoWyUwZLqg+1BxHWp/DX8nAYjLC6COKbi/MC0wxHA/LC2bZWJ++6JXqFNfRQ2QXZ4l33Up7zD72FMtTxrbw9TpjfViACvfXmek3Xl7tZr2FXjJKWSvTbEQuNrqrPo3Dx7mecP1yZ7ASB+X2owv1oq+Y3RX0Fu4aqYhFQAo+K8u21gVibijLAawOprs/8qBG0seqARbcN8Xp912GQLkjOYtsFqbaaBz3GtuSyO1+bRWFmrQ3+chVsiKI6bY+aQOMd/QiSMxzszOB8F7dezNM/gOQMh+ROxo2iTlNQGup6rQREmIVrw1+02K57VKbHbQNtJfhulIXn+6c131aB+b/4vh8sBjp5tRsV6ojI83oXev55Cfy1Ob4XbHtYpm0rahHoDJP1rCxisJJc0X5Dv2Q2803zWaM+QlMm9cTAe5quq/ttkEuzI14cGHubLZZpLAfjtD2gyVPXR2ZAZEYWNKgPp2/2umrNplTxSgwDL20Ae+AJogxoWNymd9DrkukaQAMh8GqfzcCXu5OL+wm268OyKY98oiVvtm4NlIXcm1Zc22zmKXtV1/ENam0AjXTiCHQHL+57FdBesCMynTQQybHHR8xIJfJcGjT+DuzFgmGUhxV+NWjssarz9c694aAI7wdMV3e37mKZTlFSu96YaPbqOFBMgtlxyi5u5u0UkGkrSX41aAzZ0tVDb78gSrA0aCI44WJ/UH+cNtXaLk2bYD8Vbx1x+aVlL1wm05qV/mrQkT3RD/Ot51S4l5PgzDZYprEdFtUNGv83MuN7luYsCOm7lce9oMcQ3OiuFTDyeV4A064+bTsHVQeDuj7MFva7/0cdcLdo0dow6HihwMruXdrdoEFqBsQbrHQvp2/brHtLMHhrjG9ZYNftAqGHwv1X7Lss9l3LTn4paBLktJ5Hrs8AfXkLPKEmMo0ya7EOecZK9Yc13Cw8h/OqsT46fRaslRjviHdHmO4DbWG/ezo02UIjDRr/Gax7ql3bjgiKwxrsYt+5CzT5JPZcQE/r0S8CjWAntobMTT2PaXjZ5fNYOzNfAc8F1RH3ICkSXcfy7DPsulNII1uaz3knZ7NYwTJ93+t2D+gVFhoDOwM+Y7fJ4hnBYgfXIncamIraw/a0ilY1JJIQCJ/eVUIWPicL0nmntfGVn7foQdYF6b8ANLIn9g80hDjSLXy5yDiuCYUGe0UxXce/zLNcey7eFoLA95sesDQddfcsec6jh54bwtp6eG19x+E8lNks2M5VLAF6ZZmuDhoyPXp3EMQ+EzSYbcroeajCNXx+NiEgzJQc/E/Ktmvb6b3OAZE7tatsYq6UBsqWZFLI2r6/hCZr2yR6bbHvHdRVVHkLqQ56lWDPe6/ELDHIjTb1DODQ2zEdG3rv4eiI7E4yuQ80aJ9DT/EY8px9NtzOu8vz5jnYBLyl4Vsh9TX6Y0Hj53o8LrHUmP6txVH7E5v6mcmWXeoBv6ScNwBf5oDcjX7PFp1aSMXPNHA4iiMOzGcsyufFoeFgl0XTGWGPLcgMsh4MGisrpM63wW2dexKZHt6rs5eNfMthTVKKHJlWBniLPRp3JK7w673scoICp9+DsOhn3/RDh2/aLzjf4gfmEN+FljwUtAZLxIrD40TF+iNa9qOtjunquLKOE5Dpw+jl9n6YSZqpdEl8qbKePoLFS4ICDsvc8LE8D6hKOx6P1soi/i2odUZkjHzG9wbEF6+WC6oKWsMg8kj/7WU5L50IgTOF8mo2UOwIad/7vn/b7iZkAhJfSis7BxoxOrkK118owxWYJud4KkrSTKY5+maxV8k9PAx0Qj2VEcMiIp8xNyP40qk+LkT6oLwCPx8z5jkHWBeqKKpoSCEsmhN9yAoK5Pl3yAl3rKLFnlodgUxDaryL/Ra9kqFfCbQGpQXYguZYah5282A5k+Ka0ASESO1BnpRpdrnhbt5VsdhUkukIy4CFcTGcaiLPnjmE3XaSaoXFJWOyCQ8UGhy57VFBZnwZIf0xoPHbb6GlOtiZbKHxwK6LrOj62aMo1dQutrwYepo8pMyQqqCl8dOJ8NIyo5OhAbA/PcyE5Urn4N84HJge02DFhv68i2hc8AGgU31sLVVsPrHfTn+xwy9ZZKUfQKPVMSfBfBsgsgD7VBXQSMfPcccMQZ+fo2F9VIgayPQz3kKYHpW5HRi08OkBoC382qFsW2cIjbcDobGP6FbAD97tfSAwpBBKtPJaGgwCdb4OOJGkTDOlKGLoxD/MgKM8whHW7IZRfmlVJBpvaR1ewtP33kcqPHSDEcKeqPluxfDCvEFXNY6TsroQrXTYO5R4xva8Qc2qy/HqJqqjBUbr9ub3nz2qpTVG4weA7kzx3j7y2Banh72uLClwcyu1RPYX3kp7lQypjv0DPf+v5/M8FWI9MkLL2Pocq711wDGK8INaUmFrGPQYP8sf6sBk5jPBQAN7M2KtJbWIR2Hy3F1lD6pHKwWaxJJ0deA6HKfDNbvqv5llXsi2xku1a972KgE0dikVvH6teYlejaFikKNjyUOHqMCKnTgHHb/j6fggfAbVk5RTHMR23Hm8EMdmYCH7NeHkjBCyBoy4HzXxTKwRO0bDoJGd4kd+2O8YQWjyR4AtDrzglJ3+WCH1oHgeW3n47gjbukaJ+mQIFmN7hhuExlbDuvvGraaDZIbeW7MdRN95x5443g7HjYKOMGrSnsCOJXmbAbYZsHGB2N4b1oXLgcINSy6UrmUkK+lyCgRtVIc5XRo74E3sYE6WFUpLlr05lF25rC1op6iaYa8aBZ3aE43YTzMmIXPbs6hksKGASaKuFV4CxFwMQEunpTQ0VPLwkiqeQnJlHNAIpWh56O440aXY3Aypr98g6JU9NrALHfMiL6RAI0350WwhlNh7gbuRvh2wZezunmfdO4E5WCJ05JUIY9BH4vYGbG8sdr9j0S+3U5cFDTc+ZFj0mYbe9Q7LVSoAjfUphDzYWtr1Zy+E3RuS09AalsQlu5KHptlJ9E1Q3UUstyFHr/l+/28LNLTWHGik4Rf0ez/2ea6TuuQLDWljBrHpMgI42efeR8P/ooUwUlthBD/QdXjW+ZZ0ogtyJEQnWMM/Ia/M1GsDsD4N1BRoCOGOj3+zgwF4Ccqgw3FWTnEFg8b/eK5FvIBdVZNyd0FDL7tzc8ZKE9KMTw8y2cKCIwO0wncAzUocmJsB/kFGmXBpGdDIIEnMEXdbX0NNTyoUQ/hR4+GIZ3d4wQYiU7qMuwtyP+5uTZ6G9kLsPaOx2GQcg6h+d2OOlg5gV9WR/tYQaPwYhxvT54DezQ8yQoOvVwO00O2XI7shuq+OJTK1WAjZfsY5rSLnBL3hl2jFtz6zcPtq3ABo9AN2sIOyiX3OVjg6qMiSSkFAyqnDUPeZu4stRZ1W0fGvH/9OU+I5e1wNTeInEllszUrSVZdnfZI3F37YfzcAepxlsT1mxB6r1XCEfRFD6oWCPvChsvG4WhriCv8Id3d9jB0gcOduL+20FUrWZYAIkLoQztLwXnTEr8c/DYD+b2KoznmGqm+St1OulR4boisw8Th343skKCkMTJNKaAKa3Q7khoODqkcyoPHO+g/CJozHqt3MFD72ff6/9H4oD/offDeTgcItfVjs1f/B963JgYYQEKXD1NLwvlvCyR5HLFgWqwjwFLrFJsybXDIBTWA3eg4DnkwvSO1r7aAR+n8aeEyhJzBUUWFskeAnJsny0Au473tMFWvKNzotCy2HJqcglCQKrVuJwtvXxKDZes/hxqfAvtJrB20jjGVHsTDez3BNqkHlnjKyOx3MJ8sgsCQ6U0b8H6RDopD7xBwaupUNnSQWMfP5WnoH6cOjVTfozCPgGaquuQaPQLoFAdyazmjBIkRUIZQGYK+F98YDPHW+jmc8HRRjw1dPNckShmSFbR11YPL8KewDD5fYn5JUHrKg00hb6XyPwIM6K/yrpYPIIF+Wwv6Z9C0RBtwy6eOVtdLnpWmJrEbFr5uhD5/7js8rle0dlnpaM2iDtOxxPQKPegSWdFokhQAFO1lz3g555i80amM3ihXoolDi8K8OdpFey2VGsZnv3/bDqZm/WHMzSdVAQ+5m+sL1CGJpjyCXaCxjSB2+cztbvCzkhph5MQO7UYPQcTgaKN6MIAJTCnQCoFkbCPWn1j2pcEM50K8o6rz4nsvpmyYxm1Kp6w6+/c4LI06WF3kowwhracRJQKpzKAbmdMfEysB6Q6W6X7EMaM/89yTYKdhkTLUaQY+RdtSHI67sOT7W0Pi3lqnkAtD2ixdzY0vENTAYtgzSJ2kE/urM4XS/QtAE7M4yoNF4NVR2TNucrMyEoke5ahpFcttCSCW/lbltQTgcm8Zl3k6q+S1eszb5LA3g6CkjeoxW7Hhr1mq+IMUcpUDD7ps7rq6gcySqD7QB9gE7ngWPNzY7WZy5BOgjWunsOFkh9IoQAzQ8WezD+dxHhSUPdcqN/IpodZkJ2VHm0oL1XE2xHV8raMNcxBzXIiY2h1YuN4w3kkRndzScXQMowrr5DBNQPt/d2OcMMPCdPy2EsHtUBjQiEj1fnArkWdtSNK4NNILZdODjepz5JvEO/05UEjTUfnDqJc8xwQl+0MZNN76DdGbaqZjnpftBGdDJG3aFN7wCY2zRmkLHtQToyI50Gszi9HKDcaeV22/yoqU5u4GIGmcuCxRKsepR+aoHhptIpdeupcvQsHSROC47ihb3v8PSagJNqjD2SjzjgTap9V4SNPRsHXrb0OWgcuHV1/Vbrz4UKo8HuwVfxy/23WWhA0va7jBoBzbnh2N/5m+8fXQk7A4Z0CAKzxtOJTyEmXZknnhp0IjEBM1QoKUhLJ1+rEycwtJGgSnYTOd0ZFNJ0JDZGbMKPIr7rH6UyN0pMhoagrN9VjEsneVJyrsn5Rt43yxuOvxU/TS4Nelvgt0opL3QFnP2d++weZiUX5oFhWvdLf91yQqMrftB44eVgo/rcu/Fg/ZAlBoVQe9Z+blz4sjIipEuNHRqLWkFMStuB0tzodLEKN9KRRNkc5O3U+cFxrWApj6uxyURYB+39H5DQK+g7WS/40s0tjs0UuJxaRyuIHS7XXBtFqgAnmJl+1Z6aTqNDPNtT9oGIlFLIwZNCxJFPu4WQB/Lg56k6IhNmhFfKh0XtLTxdimV1hGU6NbkR/9I+0GVkeBjlGj4XTZdXkLhFCEQDQwWg9aoEvW4IkdHQVdpC8OKFr813x1mgUf2ypDQ4Di6Thxo7B6NTOQ2yrBTcfY6qRYZhbEgjsuJEEiDLmkWjKuBppU0nEl/MwIaofGquDTNQKpqhh43h+Ure3DgrUqgQVeNTH6EwIeaa1aEQB60bifoMOcZug4MlnnRwMetNGdjogmcaOoP7SBaahRAR9h9X3ZZNfEFDmTwVCXQ46PQkga12QPQoqIlMWjiunm3C+CzX8d23eRApythWIi2jhiFTQCSSOqcs1cVDN1ptXkmP/Cv0EW7LTieE+re3AEasunoIAxGeC9T8a9igT7ifYC3CdDAkN/vXD7LCFtfnDjmyXX7E1y3SRWBJlkqxK4ZugilvHbuA40piMNrYH1FqCrovJmKAxrc8D52djsFZxc60DhVM5lS82kwotrsIGzaJvhh7ngvjWxwUBFtB2hlDSSiNscx0qodO5CQUVO9LR807GpdFXvF0aSwU3XM2ONWOtE2iMqgITi4VEmXr0A7oST5cR9oMq9WAHqxh/3mWBF0ROoytvGMDzqmWdrjJK8H6EBggG2sZP5E+IzVs1Z1GhYNd4exTAKHPwhKkUnqubEwBYKqTmbJQc8DRwSaVjMQZhNkr9LlYSB6DcgJRih/OhVkmgTUTO5ODe5aD28EqXUXaKx92GnqvPqcmOwVZ6SSohZ27+KFi4dy4Zxkr4EneA28HZ3OcwdoFA2VjS9SncIABBe0Nk6xEzp4F1pQBxV1qh7wgUEbCTT6CDwPl7ZGdCZjTG1iUcUu0jd593510NDkwAku0sxEMJqKykYUQaAw1UWlRL7njiIs93dMwYcCtiEZvMintl3D1DFoHJkcBYGByzL/yueLoaNNjvERgA6hPsfoVJfoI7c47hQe+wO+9g7QY5Jk38VCalAVjEEnaJIFBnzBswno1KDqoC2a1GSrqLy0T0VTbpBYEdkcxkgQtcnCY8Ydk1vBfdXZxSqFhkzi7L5p1L5l932fgn6beQ2gs34Sfsyru5xMePklDmgtIQXM7Bacc7eTDk131UFLOXmnvirt7Y34q3MywISp1uE/rKK7avJmVz54BOn2NOuyYL84Wfk14tY7KrwSkiRZdnsiawBuHxscx/skGk5yWTgzvsuSKalpssrkTLQVbhQoYdbumK+tQSJPH3meIOalKKqOeHXuHNBkKiavyeQEWo3su0BH4wk8UnbNfnbhbXeJt90pTEQC11ikoeOFYtwuCClx0ShuzC+28DamxjfwxKBNwQsNpuqdoLHi6SB1aPq+w3tF89quSWRhKePaAnlRDzSujFd3gYbH9J1dVppVHsYQ80o61UELtyhSKV7dLyx4oJ0Xz+ODzgebkBbPIcdfy22OnXKVLaikPLCrzwPtnEs8OQUevM0QpRHXVHVJRUewrmFePNig05cwFoE24VQtdBTlCuhwJ4f21NwJ+mgDho0w5jU4LAF0UgG0Rtx8fniMtGKp6N5jcGnnBvdMq8J4aQ3fUIeXZrxoxRrfdzAUieIqu3tdIw5o2lwgiENCFhg74Nqdx6cYGtI5TfOFGTIjIv9IVTmJ8/zLIZPZmb6h+0ELnX3SAgLGV2XQHLEhGjoOSajHvu+CEg2dV351PgQAKxnsGhzWC9HReb7/opFcwX2XZBQXrNwxJyDLBI1sw1qqo74o/hCY3237btAwk2PZ48Ojzu4IBvOjJa/WN7togq0G0NNEIiDrByYx8suCTlI71YUJplPP2/Fe0LoYNHUDoQUbe8asocofet6Me0GfUwyCV5ufy2GCzpt0Z3KR9btBT6Z5Y7jr8O0OGJbS4WV9zjE1DSx0+96L2J68XI6TBTGhx3eCyoGe0NTCQijRxFS1rXtBk+wcp3T/IpuBl/dXKNw4YTymhrT7j4uFWTnUKnD4sW/sTU1tXSsDGuKQ+MZDz5e0amoRm8mLE3OULt0OdwMYHzryPAlTsFrh5Y1weURbcwWgSaLJKgMa7AgIWoXcA3vJZN0s4Hv33cArLiOnGB8sjZYect31gKSMtfuPT9fG57yEOIqbvpUBHdE4JLu35CTR2SGE94M2sMfHPeozVwijKequF2JtTnPTqzpAw3YljEWAgQeDJUqBhkNjDvzcZ/a+YJ9g2qkB9NiAOV+KeIuLX+CQW/4B1KQIwJzDtrm6f2nwrCSCPj63QPg26DfwH0TGHfgEHhQCde7f2Gk6SxeApkVeL1ii94GsREc1ge7thXmJIHw2mCXvDNBHiTgkKT38306VqdUM0BGcHCAC7fSHKrsp7b52WR5oYQKINHHgX3m7iYMBWsPaYyABmsS7Da0O0JBv7ioLcQTDU3r8XTq7a6iI0+qQAZ2C3nDzErQtaX5Ak9svERM06H9TBBr6ktFF1fKdoPcyoHfbjesIN83wr8wEvh/0KdXEN3TycLleEvQzN7Kel4erqMIRDoywEur2yChyAehgE3LymOc4X+fuNFYx1USmpAvC5QtSG3ez+P8WaKS9QdmEyCfIQNs1gaaZ7a3HzRvSIVnwuwVPg5RpkaNp7r8iOjhuF7rCp6sMIB4hDRrZb4Ky4BPoXl2g894Cgel+8esF92wh2xjXsTQ0foW6i9ATgsZPV//3zWMvb4IWFbpflDPUBzohbeGOWEs7/PhodhgDNNvWAjqrxR4FgQg0rQ3TyoEW+ARO3aDHySt3VGRZ0PtuVLlm+zbojdibYg+sUFjpju5eZNI6TjaQLI1quRuSrP8jFOSbBWqjCBrVB5qOpxZ5U6f2NEnQxlH8Y6lcKVVGGjBlWqsRNJzpUCtoXRQfODVcYi8pHcuBJilpbiAtP6Fi3qsRNH4/U0G1htRVHFme1rK07B2XAJ35/boUaBoa9nhFFtk4MqX7sUP7DtCiom9p0lDWw/YdKixtJZFpywe/6QiVAD3lx+DzXFFdXi65G2HRt7Q8kzPJDzWChoOdumLQJC+hkwOsxKDftKk4q0QnGW5G1fs4b9yNRSe++7M6QENeybDretnSpAPZBrHqiDcwWUQK9Bh6rCXypAS0USfo3De8H7TvhVB3aiSopqWRfk3rRZTSzEHfyJ99BK1HNpLRR7mXWydoUvTt3K86vCCE3P9rYtd10T5AMWgYcb8EA+9NDBqmJva2Eq8J8XJRTRs7yYe9IrQc1QL67naPG6D/K5ve5HAtMZgqnXwMg38ETY455ldnnUZKkWkotYHOi765xYtyqoMM4EG1goYxWa7Hr5UnBh71LcZC0IZo3FvRlFk2A/peK5q0e6R1SrQBoAW+RXYQLKkLQJYQtMY/DeljUq5W0Aj9TU4bctw7QUMp8bFG0KQpPhSmNJ38xF0R6DHSNEEb66W7OU21+kAbpLo+9u7R0rTEgtay1AtaUA1xSgBJgc7SNhtuNoGev+u8dFA9GfDz22QLat+lQdfQ7vEB9Eoid0yK5IYSoEnaJhugw78bDNq2awZNG48394J2nBFkwOvyC3PQulzueEP7LmVAM896v5boZkAv7gSNN9Pv2Lx6teszo0nuWJfLHZMpDIkItEUnrsfCUDQv9noXaEG/iBRo6WHD5UGLa7e8m51wt0HvYnGWI3ZHGqqneOb8PtUB2mkEND16T9jPQR6zHOj82AQh6HBk1JTPvwTdU+4AnZ3r8D360QjonTiN5jv95yW0HL5xQdOYsGA7yg/ZtuoGTY69EikusRUdvz8THV0n6Gwuncc7lK1QkW5Pr2yej6Bt+w+RgVVo+WsEdHAf6Hzua/2g5zJJ+tuHrl6DznvexBaUSQrqa0rK1Q16WDfolJadrMuATvigERKGdbLCiTtmsDEu2tO33typOjZKM6AP87XpShh4WacaG3SCrQh7qQ5kCyf0Ugc2S4Mm7lLFaEeNLXmXIdwx5Fi4Y4cvHnQ0vjoYW7nOcYiGnJ1DSr2SJ2NLRaQJaFEAQASaVATaK7vWC7sgKHoWJenP59tKgF7HMwmJ3jUCWkuWh+6GW04oAbrXBGhSdmKaUqChiZYH+ihnxxYqVGoHreWnQN4BWmkCNIleDGUMsmxuWocDGsKUqjjWQOeh0Hz+uN7bMcg5tJu4jaCpiyEh0dkoxIt8lvJBDcm5K1A40W0ANJnbb94HOqirydS+et3l6nuyR42Si+jhNWiIB0uCxj/rra7CiWJ+J8oPqGodaKn6ntMoRJsDOtP3YtDZoFAjqR10mocAqpjStBGgxHGOpUHvpUBnGZ5iW3gRNEqIGiqh743EtusGnc85rwza3dTVNn0JGsJKYClImGR+ZincBp0dSKyYEqXgmQWjNQJaZx+6KhG7y89Hqx20ZCFV0W1mgpZoAD+341qoAYmG4gW9JyiQFZWw1NWf/hG0OpeyfbPGDhboc4BK/G5g5ydFdRZOFEAvSViJPyeEV0y86apLzagbtP3DJgP/peITwWYQIWQwQNPYttQjAy9TsxsADRs1gJ6xX1C33+e3TUPOTjPs+i9y2JRUxC0IR0dk80HvfBmJXijNgYY5nUzQvt/vM0kXTrVvBrRExVrxsIzboLUVbRKWBV1vKVAev8sOL+aB/vbtW58znlw4j7VZ0CSd9e4Q0FMOaFHpQlM1V/lrhRL+FCsA/YRB38xN0EEA0J/eEGikS4GGQ3CunPAi6COZmCEJel9zKdAJNJkOzq5E9v1vTxh0/1YFrXsGnTYEGtEaTFfcfteD81ej8S3QGlbTwvKy81Gr9bWIXN4NnWJ1C7SP79F3v/0E0vDBtWy52cQFy7bT5lRHLGEt0BOF8TJugX4zyDGJcqBr7cW5vJtX0qp0DdqHc6sBLdYcTz8z0FcGCAW9U/Saunk/eFO2VGngaS5wMYpcBA3NWH+5sYzquBGeqg80nLFzrYIJ1D4M8OyDRD99c+knPoIO9r0mQQ/NjRRo2rl7E/QUCiG+O++iNBKtIgRdbyO7GdDah5ndRJSxtdHHfz4RkaYfux9Bb6E8HukNLE2yNPDUB4e/w7gFupMdsi22XhqouTqDvtm3S0D//InZAmcs0d9Asn+S08ovRCkvBP/loEnZyw3QUq10jwAN7pQ12nwA7RCyT0Sefz7R6+dlBQqdwrZuFLREaeCpZS1C2r8+gB7TkNLOmbUB9MfWDgD9RCH//Hki3X//KNHNgc5rMGdSoEcWsm+BJqeZzxVZ0BFqFPSNZiW3T6UYMFPQWFNfg3acdxh5OEXjpkD35AKlcTia4Jv5CNogDfziOeM56KQpiR6zhqMTe+Nn8cLm9LXqoFXbr83s01E50B0OaHEg+DzAsUnQNxZCLOifTxlq8jcYeR9BT+ruQ6gE2vNG0EL7T+6En0EfZUZW5tO/aWNqI3eTQkT6av6NmyvpszD/zN2Wi4lWMNi/Iz7S+D7QovqiPNFDWmjHN0ALh7BedwA3Cfoi5AKOCYkmPV2BpkHTS9CvRHU0CDpwpEArZAitfg36X8QB30iB9huoiz2DJrMxLk8974Nr4jvfvl2ABhXtgNeShUGoGfjSaRj0Wniml5sPnLoNGs4uDOUkuoG62CvQhV3Zz0LQTlF3PGV+OImZ+v7plC3Pa1p1kKpiMWrH2Wwh2mFF16DpRHI50A3UxX4EnVWQuP77u0t5XoEmn8Heovvuu24W9oATFMjRQ82Blqgqziey3wRtoEjcVX5RF/sA0P08kkQ0MhbsAmgS7yAKhH7Zg0D31oorC1r/ABohjTjgodcW0ND/5JHA0bcswAHhjW+XVjTZHp+yL+nnR1U0Bjq1jelS7W5CTwo0CStdg9bp3YkrwEk0upEC5FOOJVvKjKatMm8bTOdvRdD0w6fTv1PQ2RHdzRhEdJrEs7iqOAuMw1Ly8UoZ6OgHZPnnisMbkXzdDdMk6Pk2zEBTrzsj/VQETQGf3XHPOZ0J0hxoqapi9/xyXYPOj1ASFnHWevgKF3QeGyUwc7Y/L0gX/79PQtj0fV2NGwKtkYO1N6KdLD9fo3AOTBF0dxu0AnQCB63sQ/A+PK//dAb98cqkHRS18x5jizBooIXpAnR+JIsYtBfAEVLXoC25SAcFHTcLWiNjwmHH8eN3ut/9FFxYXzvvHgW9pN5lU6DfJCQ6q00zYSrBa3XQDVV6F9Pxto19J3fWzyw6MWgwQcASXDQNGlTHTg408Z2uQIPK1kWjwU4/Ilg3Cxq2spEZuP0sb/UkxJwZJRj0tu45T5VAZ9GAKSQIK4GmJkkzld4XivCIQfdPNsdPsUSD3QGg142DlivfJmMO/iaqAxVAa3TYndQrkY92axQ0qeQhioPacE88ac4x92dtAp2db5VMLkDfTtSxAoDNq458IhcVaq5UU9DYX/Ecp02g8/TlJLoCrY3EPTrnSu+pYTd5NyDRPjbviJ7++SSSaNAaMczLewTonpzRkM8anKwKoCGuqI0COdCk1bnTlPOV7TjnHARV1bctj0yaSaqFNk43C3o1FjcknFUHNYOvQKPx6wupRhGCjoNRXSeRcUEvskQwTRayQNPgkg+RUmzhu7S2MEKtAE2Db9egEZmHIvILCWio9G4S9EX9MCyK2HksAxqiSfnK3S0BjVoDeohBH69UB1QWuhKgvU3TquO6UDsT6muxJtYziLN/alKAuCLSkoZBkxyLDGiSICHnJOegoQlg+iJTyw7BEsW67Diq2wm/PnHPz8N4Z/flFLojxf85aC+E4kuYkNDQ0vT0nJWQnTk0MU6gyRnjy+e+Iwd6B5XejYMu5sFJ4R3DTyFp21Mz1F92Q/0rZ9DQYiMN+hmhAmhrMp0uDxLj5h4EmrSHXUxNpEXRpxD0U/EjkgWn+cVHgSaFcxKgYwK6cwK9mtB6hdmsRaB7p3pLKN64AH0O+2cifdHe16RWK6k6Yqjo+o1AO/0saUiTh3keK79I51B+WuSqUdBjTfsXOZVcbDZQ0J2PoEVzMq+aRJoHrVyA/kbjoKTinxobhesMenBsdGm0rK9DGxJkQD+nRdVxnEhOE86yu02DzprSzyffFJjS6Af0VORXv6A6HgM6O99KjIpMNZmQ0lYCWptIzscugl41Dfr2EUNZQycxnn16FZb2UImWUB7hlsY5UQG0zMT3QttTk6CxuXnZ5eHnl+O/v+edsyfQ/mNB3+plYuaiaOQ+zUAbE8nR+oW2p3FzoG2U4LtZ/unccqAo6G8fxqeejuBpXqLRawmJ7l2CzstC2gHaTrJOPJ+hOkjn7C8CTYtBY0kDb3cBugOg+3GLQJNm4JsSzQW9oOUzTYKmB7IEsjmW3Z6UGp1AS/U456DXjwCNIjbobzea7h8JWqaO/HJMagF0RwZ0lpolGX29YdBjBminf3MySj4zKmpiuMU1aImk32U5KAGd2K9EdXiSoGkle9OgWaqDHnTvModzoceAlpRomGuSg0YpDI0+0AO5xWO4YEACOaP6IaBLDAgrnFHdKOgjow2SOanHJjO7FXoGsjqXm/f+UIl24xLHzz4StGSp0W3Qa2nQZldddqYINQ36OfwEoMl5TkXQPeG4u+zyvPoPFPoImkyjDYNyoGf58PAmQWdHDMlaHXQ4ukZAkzHosqfMuLHXYGvqbwJ6KTw066ojk4ImreT7nTzozoNAm20Ena4kjggvdGSSYbmvJUG7D1Udw9KgfaWxSU8VQUOgdLlErwlSssH+UmfbPQw0nacvGvP+EfS2daCdEKZPTe3oDNqXBt286shAL8paHbvGRmpVA32ep5ZL9LBloI9VQPtkpNbraaBAM6B1WdAXg+s+E2g4mNO+PpWjIdBzadCOkoNO5M8fPfcAG0YLQdPJq6+/P+i8e+5BoNVWSjQqDXp9Bg0nKEinZjf1nxfJAL3f+bOSoGGk1kNAK9KgqW0PoDVb4qiKq8bbpkHTeVzCwWe/TqLLgtaV/PAVCefggRKdHz7bRtCygxgvhpQCaEiE/hFKg6YHc/7ngiYpemvkSpzJUzgpxFJQ8oqWy0HoyYK+Gm76nwY6S9G/uHFJ0JE9hfNyRIevPBg0jShuS4H2HgW6UxI0TIPFEn0+L6dtoOdlQEOH/qNAI6SNpEGbH0FL6PZ8JFNjcxoqgi6eydE0aGjslZk+dbYeMGgtA634sqAXLQYdPj8GtNzguot6wBNoabMwA522EHRAQBuPAK2NTGnQdG4ZBb2Wlei8q/0LtDTouAi6V0KiWwzafBzogTxol8yWVPTLfpGWgM5qTTynpaAtKdDkoqA7nwv0sG2gXWzew+hwDJoOU1qUBK0/BnToCOfwXRar2E2cSHcTtCIn0TCIhiRZ2w/akQa9aCNo5915AaOTglYWjnQwiowP0NEjQJNJzVLKowBaaxy0BnNbFNn4XRH0oK2gN58AtO/8aYHqKPddjwKNCOh5FdDHxkEfCTJZ2SRVoSfQgTToXZtVh9pC0NmJe4pWxlY5ndPXMGibFMerg9D7XKCl/ElqZ7mPAQ1HYki25P0S0OW2tfWBgtakQlHZ0CJQOEmzxUDkIjX/ZUDPfNpq9hjQ3RI6ughaNrjqubCFviYTu3mJluzmPRdfZXPamwaNHgGaxtZfE9tunepoMWgYTKu84nuST4DFLqn3/wItVfN/zpXoBHTnheTOHSnQMOX7MaBLqw6lpaBNApqMn3B8uY2dRLFRs13t7QdNj6eTKgy8AdqVBW3YDwM9bDPonTxoKBxQTif6SoEOHgZa8mjo3wh0KYl+MGjlc4G2X5x3WdAmqY5uJ+jtGkDrDwF9kOsXzEFbBYl2f3/Q8weC7pUGDWeetBb0or2glZKgE3IYuCMNuvGhRdl1bC9oms+WB00qnZUy5etfoAugt/KgNxVAK1+gK4M+rOW9yS/QlUCPTqC/JLos6PUX6NaBhtZMpGBLpYTqoOXr2hfokqAtAA2HnbcV9O5TgA6w86GUDK22F7TjnUYIPwI0qVeTa/vBoCcUtPmbg6ZfEK4fBDo6gXZkQRtlQS8eClotBTp4FGjajbKWBu2FpqoqMMStFGhofmsl6AdLtDxox1V689Kgu+0FvX0YaDjmWSkBejeffyaJfhBoGyUGQsuR5/myVUfKGoO2viS67EUHtruyc6Add9OrCBq1DLT7yM3wPKNWFrTzuUBvHgka6c9foB8EOoyl9dqX6rhDdTyHwRfoFoEmXxDuCWjpxopHgl59QtCbFoOOWww6bg60TypQmy8G+gK9azHozOpAn0F1tBv0/GGgjVKgZ59LdbibdU+1k4eojv9k0H5oDtSl/Wo/YG0PAN1e1eEFJhxbYNh2a0GP5EF7rQZNhrE9BHS1zbAU6N6hvaCfob2mpaDXCrKkTkH8LUCjVoPWPg/olupoCtqelgK9/wJ9PvhIHrTSU+xOCdCPtjp6SvBpQKvDkdxUjF9hdfS2rQbtlwHdk5sd/Wt09GcCPZ/vXHnQyhfo6qCVEqC3vcZP/fq0oHtfoL9AZ1aH+PoFoIclrA5P2SvztVJOR39JdEXQvVaDjmczR+ryYwK601LQCga9cc8lNV8SXQL0pqREtxN0aiNN7w42C6lrs1G2dNbuF+iSF7JRqutqbz1fS13zOZ3W8QW6PGr4TYeu/LUkz6edoMvq6O2DQdvLEhdqL+hNm0Fnh1e08KoIWikDev1Q0OmnAr1pLWiMehxFutQVRelb20E7UkdD/BrQKUKR1IUQQr8FaKeVoD+X6ijTbv0F+kuiv0B/UtCK/BjYL9AVt2jtC/QX6E8FmraMfYH+vUE7X6AvQEuqDoLWM092tGQG9Av0B9Aul55DuZUD7TrhF+giaE86RW9+6eimVQfV0aapzNfBbDZzZuILf42znX+BPpt3QMSRwDZzwrKglS/QVUEfumZohnKXGShdFaEv0MS82+83ktxCbN0pS727Xu8lrt4ef11XR0hH/+Gcs3Mt13MpboTdeq3ACDf56yHDP38T0PNS1/8BAZLmeybvOe0AAAAASUVORK5CYII=");
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:contain;
+  aspect-ratio:360/313;
+}
+.anim-hero{opacity:0;animation:montee .7s ease forwards;}
+.d1{animation-delay:.1s}
+.d2{animation-delay:.25s}
+.d3{animation-delay:.45s}
+.d4{animation-delay:.9s}
+.d5{animation-delay:1.05s}
+.d6{animation-delay:1.2s}
+
+/* ---------- HERO ---------- */
+.hero{
+  background:var(--jaune);
+  position:relative;
+  overflow:hidden;
+  padding:56px 24px 96px;
+  text-align:center;
+}
+.hero::before{
+  content:"";
+  position:absolute;
+  top:-140px;
+  left:50%;
+  transform:translateX(-50%);
+  width:560px;
+  height:560px;
+  border:46px solid rgba(255,255,255,0.35);
+  border-radius:50%;
+  pointer-events:none;
+  animation:respiration 7s ease-in-out infinite;
+}
+.hero-inner{position:relative;max-width:720px;margin:0 auto;}
+.hero .eyebrow{
+  display:inline-block;
+  background:var(--noir);
+  color:var(--jaune);
+  font-weight:600;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  font-size:0.8rem;
+  padding:8px 18px;
+  border-radius:999px;
+  margin-bottom:22px;
+}
+.hero h1{
+  font-size:clamp(2.1rem,7vw,3.6rem);
+  color:var(--noir);
+  margin-bottom:14px;
+}
+.hero h1 .rouge{color:var(--rouge);}
+.dates{
+  font-family:'Archivo Black',sans-serif;
+  font-size:clamp(2.4rem,10vw,4.6rem);
+  color:var(--rouge);
+  letter-spacing:0.02em;
+  margin:8px 0 4px;
+  animation:pulsation 6s ease-in-out 2s infinite;
+}
+.dates .chiffre{display:inline-block;opacity:0;animation:rebond .6s cubic-bezier(.34,1.4,.64,1) forwards;}
+.dates .chiffre:nth-child(1){animation-delay:.55s}
+.dates .chiffre:nth-child(3){animation-delay:.7s}
+.dates .chiffre:nth-child(5){animation-delay:.85s}
+.dates span{color:var(--noir);font-size:0.5em;vertical-align:middle;padding:0 6px;}
+.hero .mois{
+  font-family:'Archivo Black',sans-serif;
+  font-size:clamp(1.2rem,4vw,1.8rem);
+  text-transform:uppercase;
+  letter-spacing:0.28em;
+  margin-bottom:22px;
+}
+.hero p.sous-titre{
+  font-size:1.1rem;
+  max-width:520px;
+  margin:0 auto 30px;
+}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;}
+.btn{
+  display:inline-block;
+  font-family:'Archivo Black',sans-serif;
+  font-size:1rem;
+  text-decoration:none;
+  padding:16px 30px;
+  border-radius:999px;
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(39,37,31,.22);}
+.btn:active{transform:scale(0.97);}
+.btn-rouge{background:var(--rouge);color:var(--blanc);}
+.btn-noir{background:var(--noir);color:var(--blanc);}
+.btn-blanc{background:var(--blanc);color:var(--noir);}
+
+/* ---------- BANDEAU DÉFILANT ---------- */
+.bandeau{
+  background:var(--rouge);
+  color:var(--blanc);
+  overflow:hidden;
+  padding:14px 0;
+  position:relative;
+}
+.bandeau-piste{
+  display:flex;
+  width:max-content;
+  animation:defilement 22s linear infinite;
+  font-family:'Archivo Black',sans-serif;
+  text-transform:uppercase;
+  letter-spacing:0.12em;
+  font-size:0.95rem;
+  white-space:nowrap;
+}
+.bandeau-piste span{padding:0 26px;}
+.bandeau-piste span::after{content:"·";padding-left:52px;color:var(--jaune);}
+
+/* ---------- APPARITION AU DÉFILEMENT ---------- */
+.reveal{
+  opacity:0;
+  transform:translateY(34px);
+  transition:opacity .7s ease, transform .7s ease;
+}
+.reveal.visible{opacity:1;transform:translateY(0);}
+.reveal.r2{transition-delay:.12s}
+.reveal.r3{transition-delay:.24s}
+.reveal.r4{transition-delay:.36s}
+.reveal.r5{transition-delay:.48s}
+
+/* ---------- SECTIONS ---------- */
+section{padding:64px 24px;}
+.wrap{max-width:960px;margin:0 auto;}
+.section-titre{
+  font-size:clamp(1.6rem,5vw,2.3rem);
+  margin-bottom:14px;
+}
+.trait{
+  width:64px;height:6px;background:var(--jaune);
+  border-radius:3px;margin-bottom:28px;
+  transform-origin:left;
+}
+.trait.rouge{background:var(--rouge);}
+.reveal.visible .trait{animation:etire .6s ease .2s both;}
+@keyframes etire{from{transform:scaleX(0);}to{transform:scaleX(1);}}
+
+/* ---------- ÉVÉNEMENT ---------- */
+.evenement{background:var(--blanc);}
+.evenement-grid{display:grid;gap:18px;margin-top:8px;}
+@media(min-width:680px){.evenement-grid{grid-template-columns:repeat(3,1fr);}}
+.fait{
+  background:var(--creme);
+  border-radius:16px;
+  padding:24px;
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.fait:hover{transform:translateY(-6px);box-shadow:0 14px 28px rgba(39,37,31,.1);}
+.fait h3{font-size:1.05rem;margin-bottom:8px;color:var(--rouge);}
+.fait p{font-size:0.95rem;}
+
+/* ---------- POURQUOI ---------- */
+.pourquoi{background:var(--creme);}
+.cartes{display:grid;gap:20px;}
+@media(min-width:680px){.cartes{grid-template-columns:repeat(3,1fr);}}
+.carte{
+  background:var(--blanc);
+  border-radius:18px;
+  padding:28px 24px;
+  border-top:8px solid var(--jaune);
+  box-shadow:0 4px 18px rgba(39,37,31,0.06);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.carte:hover{transform:translateY(-8px) rotate(-.4deg);box-shadow:0 18px 34px rgba(39,37,31,.13);}
+.carte:nth-child(2){border-top-color:var(--rouge);}
+.carte h3{font-size:1.15rem;margin-bottom:10px;}
+.carte p{font-size:0.97rem;}
+
+/* ---------- VALEURS ---------- */
+.valeurs{background:var(--blanc);text-align:center;}
+.valeurs .section-titre{margin-left:auto;margin-right:auto;}
+.valeurs .trait{margin-left:auto;margin-right:auto;transform-origin:center;}
+.valeurs-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:26px;
+  margin-top:12px;
+}
+.valeur h3{font-size:1rem;margin:10px 0 6px;}
+.valeur p{font-size:0.85rem;color:#5a574f;}
+.pastille{
+  width:64px;height:64px;
+  margin:0 auto;
+  border-radius:50%;
+  background:var(--creme);
+  display:flex;align-items:center;justify-content:center;
+  transition:transform .25s ease, background .25s ease;
+}
+.valeur:hover .pastille{transform:scale(1.12);background:var(--jaune);animation:flottement 2.4s ease-in-out infinite;}
+.pastille svg{width:32px;height:32px;stroke:var(--rouge);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.valeur:nth-child(even) .pastille svg{stroke:#C7900A;}
+.valeur:nth-child(even):hover .pastille svg{stroke:var(--noir);}
+
+/* ---------- ÉQUIPE ---------- */
+.equipe{background:var(--creme);}
+.equipe-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+  margin-top:8px;
+}
+@media(min-width:680px){.equipe-grid{grid-template-columns:repeat(3,1fr);}}
+.polaroid{
+  background:var(--blanc);
+  padding:10px 10px 14px;
+  border-radius:6px;
+  box-shadow:0 8px 22px rgba(39,37,31,.12);
+  transform:rotate(-2deg);
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+.polaroid:nth-child(even){transform:rotate(2deg);}
+.polaroid:nth-child(3n){transform:rotate(-1deg);}
+.polaroid:hover{transform:rotate(0deg) scale(1.05);box-shadow:0 16px 34px rgba(39,37,31,.2);z-index:2;position:relative;}
+.polaroid .cadre{
+  aspect-ratio:1/1;
+  border-radius:4px;
+  overflow:hidden;
+  background:linear-gradient(135deg,#ffe9b3,#ffd75e);
+  display:flex;align-items:center;justify-content:center;
+}
+.polaroid .cadre img{width:100%;height:100%;object-fit:cover;display:block;}
+.polaroid .cadre svg{width:40px;height:40px;stroke:var(--rouge);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;opacity:.6;}
+.polaroid .legende{
+  font-family:'Archivo Black',sans-serif;
+  font-size:.85rem;
+  text-align:center;
+  margin-top:10px;
+}
+.polaroid .legende small{
+  display:block;
+  font-family:'Archivo',sans-serif;
+  font-weight:400;
+  font-size:.75rem;
+  color:#7a766c;
+}
+
+/* ---------- POSTULER ---------- */
+.postuler{background:var(--noir);color:var(--blanc);}
+.postuler .section-titre{color:var(--jaune);}
+.postuler-grid{display:grid;gap:20px;}
+@media(min-width:720px){.postuler-grid{grid-template-columns:repeat(3,1fr);}}
+.voie{
+  background:#33312a;
+  border-radius:18px;
+  padding:28px 24px;
+  display:flex;flex-direction:column;
+  transition:transform .25s ease, background .25s ease;
+}
+.voie:hover{transform:translateY(-8px);background:#3c3a31;}
+.voie .num{
+  font-family:'Archivo Black',sans-serif;
+  color:var(--jaune);
+  font-size:0.85rem;
+  letter-spacing:0.15em;
+  text-transform:uppercase;
+  margin-bottom:10px;
+}
+.voie h3{font-size:1.2rem;margin-bottom:10px;color:var(--blanc);}
+.voie p{font-size:0.95rem;color:#d9d6cd;flex:1;margin-bottom:20px;}
+.voie .btn{text-align:center;}
+
+/* ---------- INFOS ---------- */
+.infos{background:var(--jaune);}
+.infos-grid{display:grid;gap:26px;}
+@media(min-width:720px){.infos-grid{grid-template-columns:1.1fr 1fr;align-items:center;}}
+.infos h2{font-size:clamp(1.5rem,5vw,2rem);margin-bottom:16px;}
+.infos ul{list-style:none;}
+.infos li{
+  padding:10px 0;
+  border-bottom:2px solid rgba(39,37,31,0.15);
+  font-size:1rem;
+}
+.infos li strong{font-family:'Archivo Black',sans-serif;display:block;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;}
+.infos .btn{margin-top:22px;}
+
+/* ---------- MUSIQUE ---------- */
+.btn-musique{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  z-index:50;
+  width:56px;height:56px;
+  border-radius:50%;
+  border:none;
+  cursor:pointer;
+  background:var(--rouge);
+  color:var(--blanc);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 20px rgba(39,37,31,.3);
+  transition:transform .2s ease, background .2s ease;
+}
+.btn-musique:hover{transform:scale(1.1);}
+.btn-musique svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+.btn-musique.actif{background:var(--noir);animation:flottement 2s ease-in-out infinite;}
+.btn-musique .icone-off{display:block;}
+.btn-musique .icone-on{display:none;}
+.btn-musique.actif .icone-off{display:none;}
+.btn-musique.actif .icone-on{display:block;}
+
+/* ---------- FOOTER ---------- */
+footer{
+  background:var(--noir);
+  color:#b8b5ac;
+  text-align:center;
+  padding:44px 24px 34px;
+  font-size:0.85rem;
+}
+footer strong{color:var(--blanc);}
+.arche-footer{
+  width:76px;
+  margin:0 auto 18px;
+  transition:transform .3s ease;
+}
+footer:hover .arche-footer{transform:translateY(-4px);}
+
+/* ---------- MOUVEMENT RÉDUIT ---------- */
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{animation:none !important;transition:none !important;}
+  .anim-hero,.dates .chiffre{opacity:1;}
+  .reveal{opacity:1;transform:none;}
+}
+</style>
+</head>
+<body>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="hero-inner">
+    <span class="eyebrow anim-hero d1">Journées d'embauche · McDonald's St-Jovite</span>
+    <h1 class="anim-hero d2">On embauche.<br><span class="rouge">Viens nous rencontrer.</span></h1>
+    <div class="dates"><span class="chiffre">22</span> <span>·</span> <span class="chiffre">23</span> <span>·</span> <span class="chiffre">24</span></div>
+    <div class="mois anim-hero d4">Août</div>
+    <p class="sous-titre anim-hero d5">Entrevues sur place, avec ou sans rendez-vous, avec ou sans CV. Tous les postes, temps plein et temps partiel. Aucune expérience requise.</p>
+    <div class="cta-row anim-hero d6">
+      <a class="btn btn-rouge" href="#postuler">Je postule maintenant</a>
+      <a class="btn btn-noir" href="#infos">Où et quand</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= BANDEAU DÉFILANT ================= -->
+<div class="bandeau" aria-hidden="true">
+  <div class="bandeau-piste">
+    <span>On embauche</span><span>Tous les postes</span><span>Jour, soir et nuit</span><span>Entrevues sur place</span><span>Aucune expérience requise</span><span>22, 23 et 24 août</span>
+    <span>On embauche</span><span>Tous les postes</span><span>Jour, soir et nuit</span><span>Entrevues sur place</span><span>Aucune expérience requise</span><span>22, 23 et 24 août</span>
+  </div>
+</div>
+
+<!-- ================= ÉVÉNEMENT ================= -->
+<section class="evenement">
+  <div class="wrap">
+    <div class="reveal">
+      <h2 class="section-titre">Trois jours pour te trouver une place dans l'équipe</h2>
+      <div class="trait"></div>
+      <p>Pendant trois jours, notre équipe de gestion te reçoit directement au restaurant. Tu passes ton entrevue sur place, le jour même. Pas de longue attente, pas de processus compliqué : tu viens, on jase, et on te dit rapidement où on en est.</p>
+    </div>
+    <div class="evenement-grid">
+      <div class="fait reveal r2">
+        <h3>Tous les postes</h3>
+        <p>Cuisine, comptoir, service au volant, jour, soir et nuit. Le restaurant est ouvert 24 h, il y a un horaire pour chaque réalité.</p>
+      </div>
+      <div class="fait reveal r3">
+        <h3>Aucune expérience requise</h3>
+        <p>On embauche l'attitude. Tout le reste, on te l'apprend avec une formation complète et payée dès ton premier quart.</p>
+      </div>
+      <div class="fait reveal r4">
+        <h3>Avec ou sans CV</h3>
+        <p>Tu as un CV? Apporte-le. Tu n'en as pas? Viens quand même. Ce qui nous intéresse, c'est toi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POURQUOI ================= -->
+<section class="pourquoi">
+  <div class="wrap">
+    <div class="reveal">
+      <h2 class="section-titre">Pourquoi travailler chez nous</h2>
+      <div class="trait rouge"></div>
+    </div>
+    <div class="cartes">
+      <div class="carte reveal r2">
+        <h3>Gagne ta vie et apprends</h3>
+        <p>Tu développes des compétences qui te suivront partout : travail d'équipe, prise de décision, gestion du rythme. Tu gagnes ta vie pendant que tu apprends, et tu peux monter aussi loin que tu le veux.</p>
+      </div>
+      <div class="carte reveal r3">
+        <h3>Un horaire adapté à ta vie</h3>
+        <p>Études, famille, passions : on croit qu'un emploi doit s'adapter à ta vie, pas l'inverse. Des heures flexibles qui te conviennent, dans un restaurant proche de chez toi.</p>
+      </div>
+      <div class="carte reveal r4">
+        <h3>Sois toi-même</h3>
+        <p>Un milieu de travail sûr, respectueux et inclusif, ouvert aux gens de tous les âges, de toutes les origines et de tous les parcours. Ici, tu fais partie de la McFamille.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VALEURS ================= -->
+<section class="valeurs">
+  <div class="wrap">
+    <div class="reveal">
+      <h2 class="section-titre">Nos valeurs</h2>
+      <div class="trait"></div>
+    </div>
+    <div class="valeurs-grid">
+      <div class="valeur reveal r1">
+        <div class="pastille"><svg viewBox="0 0 24 24"><path d="M12 21c-4.5-3.6-8-6.6-8-10a4.6 4.6 0 0 1 8-3 4.6 4.6 0 0 1 8 3c0 3.4-3.5 6.4-8 10z"/></svg></div>
+        <h3>Service</h3>
+        <p>Nous accordons la priorité à nos clients et à nos employés</p>
+      </div>
+      <div class="valeur reveal r2">
+        <div class="pastille"><svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M3 20c0-3 2.2-5 5-5s5 2 5 5M11 20c0-3 2.2-5 5-5s5 2 5 5"/></svg></div>
+        <h3>Inclusion</h3>
+        <p>Nous ouvrons nos portes à tous</p>
+      </div>
+      <div class="valeur reveal r3">
+        <div class="pastille"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 6l2 6-2 6-2-6z"/></svg></div>
+        <h3>Intégrité</h3>
+        <p>Nous faisons ce qu'il faut</p>
+      </div>
+      <div class="valeur reveal r4">
+        <div class="pastille"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></div>
+        <h3>Collectivité</h3>
+        <p>Nous sommes de bons voisins</p>
+      </div>
+      <div class="valeur reveal r5">
+        <div class="pastille"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="6" ry="2.5"/><path d="M7 8.5V19M12 8.5V19M17 8.5V19"/></svg></div>
+        <h3>Famille</h3>
+        <p>Nous sommes meilleurs, ensemble</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ÉQUIPE ================= -->
+<section class="equipe">
+  <div class="wrap">
+    <div class="reveal">
+      <h2 class="section-titre">Rencontre ton équipe</h2>
+      <div class="trait rouge"></div>
+      <p>Derrière le comptoir de St-Jovite, il y a une équipe soudée, des visages de tous les horizons et une ambiance qui donne envie de rentrer travailler. Voici quelques-uns de ceux et celles que tu rencontreras.</p>
+    </div>
+    <!--
+      PHOTOS : remplacer chaque bloc "cadre" par une vraie photo :
+        1. Déposer les photos dans le dossier photos/ du dépôt GitHub (ex. photos/equipe1.jpg)
+        2. Remplacer le <svg> par : <img src="photos/equipe1.jpg" alt="Prénom, poste, McDonald's St-Jovite">
+        3. Mettre à jour le prénom et le poste dans la légende
+      RAPPEL : consentement écrit signé par chaque personne avant publication, autorisation parentale pour les mineurs.
+    -->
+    <div class="equipe-grid">
+      <div class="polaroid reveal r1">
+        <div class="cadre"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg></div>
+        <div class="legende">Prénom<small>Poste</small></div>
+      </div>
+      <div class="polaroid reveal r2">
+        <div class="cadre"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg></div>
+        <div class="legende">Prénom<small>Poste</small></div>
+      </div>
+      <div class="polaroid reveal r3">
+        <div class="cadre"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg></div>
+        <div class="legende">Prénom<small>Poste</small></div>
+      </div>
+      <div class="polaroid reveal r2">
+        <div class="cadre"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg></div>
+        <div class="legende">Prénom<small>Poste</small></div>
+      </div>
+      <div class="polaroid reveal r3">
+        <div class="cadre"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg></div>
+        <div class="legende">Prénom<small>Poste</small></div>
+      </div>
+      <div class="polaroid reveal r4">
+        <div class="cadre"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg></div>
+        <div class="legende">Prénom<small>Poste</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POSTULER ================= -->
+<section class="postuler" id="postuler">
+  <div class="wrap">
+    <div class="reveal">
+      <h2 class="section-titre">Trois façons de postuler</h2>
+      <div class="trait"></div>
+    </div>
+    <div class="postuler-grid">
+      <div class="voie reveal r2">
+        <span class="num">Option 1</span>
+        <h3>Viens nous voir</h3>
+        <p>Présente-toi au restaurant le 22, 23 ou 24 août. Entrevue sur place, avec ou sans rendez-vous. C'est la façon la plus rapide.</p>
+        <a class="btn btn-blanc" href="#infos">Voir l'adresse</a>
+      </div>
+      <div class="voie reveal r3">
+        <span class="num">Option 2</span>
+        <h3>Remplis le formulaire</h3>
+        <p>Deux minutes suffisent. Laisse-nous tes coordonnées et tes disponibilités, et on te contacte pour fixer ton entrevue.</p>
+        <!-- REMPLACER le lien ci-dessous par l'URL du formulaire Google Forms -->
+        <a class="btn btn-rouge" href="LIEN_GOOGLE_FORM_ICI">Remplir le formulaire</a>
+      </div>
+      <div class="voie reveal r4">
+        <span class="num">Option 3</span>
+        <h3>Postule en ligne</h3>
+        <p>Tu préfères passer par le site officiel de McDonald's du Canada? Dépose ta candidature pour le restaurant de St-Jovite.</p>
+        <a class="btn btn-blanc" href="https://emplois.mcdonalds.ca/" target="_blank" rel="noopener">emplois.mcdonalds.ca</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= INFOS ================= -->
+<section class="infos" id="infos">
+  <div class="wrap infos-grid">
+    <div class="reveal">
+      <h2>Où et quand</h2>
+      <ul>
+        <li><strong>Dates</strong>Samedi 22, dimanche 23 et lundi 24 août</li>
+        <li><strong>Heures des entrevues</strong>À venir</li>
+        <li><strong>Lieu</strong>McDonald's St-Jovite<br>387, Route 117 Sud, Mont-Tremblant (Québec) J8E 2X4</li>
+        <li><strong>Téléphone</strong><a href="tel:+18194251333">819 425-1333</a></li>
+      </ul>
+      <a class="btn btn-noir" href="https://maps.google.com/?q=McDonald's,+387+Route+117+Sud,+Mont-Tremblant,+QC+J8E+2X4" target="_blank" rel="noopener">Obtenir l'itinéraire</a>
+    </div>
+    <div class="reveal r2">
+      <h2>Une question?</h2>
+      <p>Appelle-nous ou passe directement au restaurant, l'équipe de gestion se fera un plaisir de te répondre. On a hâte de te rencontrer.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="arche arche-footer" aria-hidden="true"></span>
+  <p><strong>McDonald's St-Jovite</strong><br>387, Route 117 Sud, Mont-Tremblant (Québec) J8E 2X4<br>Restaurant franchisé, fier employeur des Laurentides</p>
+</footer>
+
+<!-- ================= MUSIQUE ================= -->
+<!--
+  MUSIQUE : déposer un fichier libre de droits dans le dossier musique/ du dépôt
+  (ex. musique/ambiance.mp3) puis vérifier le chemin ci-dessous.
+  Sources libres de droits recommandées : Pixabay Music, Free Music Archive (licence CC0).
+  NE PAS utiliser de chanson commerciale (radio, artiste connu) : droits d'auteur.
+-->
+<audio id="musique" loop preload="none" src="musique/ambiance.mp3"></audio>
+<button class="btn-musique" id="btnMusique" aria-label="Activer ou couper la musique" title="Musique">
+  <svg class="icone-off" viewBox="0 0 24 24"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/><line x1="3" y1="3" x2="21" y2="21"/></svg>
+  <svg class="icone-on" viewBox="0 0 24 24"><path d="M9 18V6l10-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="16.5" cy="16" r="2.5"/></svg>
+</button>
+
+<script>
+(function(){
+  var reduit = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var elements = document.querySelectorAll('.reveal');
+  if (reduit || !('IntersectionObserver' in window)) {
+    elements.forEach(function(el){ el.classList.add('visible'); });
+    return;
+  }
+  var observateur = new IntersectionObserver(function(entrees){
+    entrees.forEach(function(e){
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observateur.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  elements.forEach(function(el){ observateur.observe(el); });
+})();
+
+/* Contrôle de la musique : coupée par défaut, démarre au clic du visiteur */
+(function(){
+  var audio = document.getElementById('musique');
+  var bouton = document.getElementById('btnMusique');
+  audio.volume = 0.35;
+  bouton.addEventListener('click', function(){
+    if (audio.paused) {
+      audio.play().then(function(){
+        bouton.classList.add('actif');
+      }).catch(function(){
+        /* Fichier audio absent ou lecture refusée : on n'affiche pas d'erreur au visiteur */
+      });
+    } else {
+      audio.pause();
+      bouton.classList.remove('actif');
+    }
+  });
+})();
+</script>
+
+<!-- Mise à jour : 27 juillet 2026 · GitHub : Mes-projets-/mcdo/embauche-stjovite.html -->
+</body>
+</html>
